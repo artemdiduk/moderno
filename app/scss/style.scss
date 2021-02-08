@@ -1,0 +1,23 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+.box{
+    font-size: 12px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.box{
+    display: flex;
+    transition: all .3s;
+}
+
+body {
+    background-color: red;
+}
