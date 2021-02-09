@@ -1,23 +1,14 @@
-html {
-    box-sizing: border-box;
-}
-*,
-*::before,
-*::after{
-    box-sizing: inherit;
-}
+@import '_vars';
+@import '_global';
+@import '_fonts';
 
-.box{
-    font-size: 12px;
-    padding: 0;
-    overflow: hidden;
-}
-
-.box{
+.header__top-inner {
     display: flex;
-    transition: all .3s;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
 }
-
-body {
-    background-color: red;
+.header__text {
+    margin-left: auto;
+    margin-right: 25px;
 }
