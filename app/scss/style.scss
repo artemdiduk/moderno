@@ -410,3 +410,41 @@
 
 // end author
 
+// start tutorials
+
+
+.tutorials {
+    padding: 70px 0px 120px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item{
+        max-width: 370px;
+        width: 100%;
+    }
+}
+
+.tutorials__item{
+    &-imges{
+        background-image: url(../images/content/tutorial.jpg.png.jpg);
+        min-height: 270px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &-title{
+        font-size: 24px;
+        @include f700;
+        background-color: #f8f8f8;
+        text-align: center;
+        padding: 34px 10px 34px 10px;
+       
+        color: $bg
+    }
+}
+
+
+// end tutorials
