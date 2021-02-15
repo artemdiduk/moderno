@@ -32,7 +32,8 @@
 
 }
 
-.header__btn-regist {
+.header__btn-regist,
+.header__btn-logout {
     background-color: $red;
     margin-left: 7px;
     
@@ -59,7 +60,114 @@
     }
 
 }
+.header__circle {
+    &.active{
+        display: block;
+    }
+    display: none;
+    height: 34px;
+    width: 34px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    position: relative;
+    &::before {
+       position: absolute;
+       left: 50%;
+       top: 50%;
+       transform: translate(-50%,-50%); 
+       color: #a0a0a0;
+       font-size: 14px;
+    }
+   & + .header__circle {
+       margin-left: 15px;
+   }
+   span {
+       position: absolute;
+       width: 18px;
+       height: 18px;
+       border-radius: 50%;
+       text-align: center;
+       line-height: 18px;
+       right: -7px;
+       top: -7px;
+       font-size: 11px;
+       color: #fff;
+   }
+}
+.header__box {
+    display: flex;
+    align-items: center;
+}
+.notificatio {
+    span{
+        background-color: $yellow;
+    }
+}
 
+.message {
+    span{
+        background-color: $orange;
+    }
+}
+.basket {
+    span{
+        background-color: $grean_icons;
+    }
+}
+
+.header__btn-login--off {
+    display: none;
+}
+.header__btn-logout {
+    display: none;
+    &.header__btn-login--on {
+        display: block;
+    }
+}
+.user{
+    margin-left: 20px;
+    margin-right: 25px;
+    padding-right: 22px;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '\f107';
+        font-family: 'icomoon';
+        right: 0px;
+        color: #707070;
+        font-size: 14px;
+    }
+    &__inner{
+        display: flex;
+        align-items: center;
+    }
+    &__images{
+        width: 34px;
+        height: 34px;
+        margin-right: 15px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+    &_info{
+        font-size: 14px;
+         line-height: 24px;
+    }
+    &__name {
+       
+        color: #222222;
+        @include f500;
+
+    }
+
+     &__money {
+         color: $grean;
+         @include f700;
+     }
+
+
+
+}
 // end header
 
 // start search
