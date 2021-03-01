@@ -26,7 +26,10 @@ gulp.task('style',function(){
         'node_modules/magnific-popup/dist/magnific-popup.css',
         'node_modules/rateyo/lib/iife/rateyo.css',
         'node_modules/rateyo/lib/cjs/rateyo.css',
-        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css'     
+        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
+        'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
+        'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css'
+
     ])
         .pipe(concat('libs.min.css'))
         .pipe(cssmin())
@@ -43,6 +46,7 @@ gulp.task('script',function(){
         'node_modules/mixitup/dist/mixitup.js',
         'node_modules/rateyo/lib/jquery.rateyo.js',
         'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+        'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
 
     ])
         .pipe(concat('libs.min.js'))
